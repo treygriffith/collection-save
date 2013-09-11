@@ -1,13 +1,16 @@
 /**
  * Module dependencies.
  */
-var buffer = require('buffer');
+var buffer = require('buffer')
+  , proto = require('./lib/proto');
 
 /**
  * Plugin.
  */
 
 module.exports = function (Collection) {
+
+  for(var key in proto) Collection.prototype[key] = proto[key];
 
   Collection.on('construct', function (collection) {
 

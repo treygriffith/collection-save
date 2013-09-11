@@ -1,7 +1,7 @@
 {
-  "name": "collection-autosave",
-  "repo": "treygriffith/collection-autosave",
-  "description": "Automatically save child models when the parent saves",
+  "name": "collection-save",
+  "repo": "treygriffith/collection-save",
+  "description": "Save child models",
   "version": "0.0.1",
   "keywords": [
     "collection",
@@ -9,6 +9,7 @@
     "orm",
     "db",
     "database",
+    "save",
     "autosave"
   ],
   "dependencies": {

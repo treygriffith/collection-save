@@ -1,10 +1,10 @@
-describe('autosave', function () {
+describe('save', function () {
 
   var collections = require('treygriffith-collection')
     , assert = require('component-assert')
     , model = require('segmentio-model')
     , type = require('component-type')
-    , autosave = require('collection-autosave');
+    , save = require('collection-save');
 
   it('saves new and updated models when the parent model is saved', function () {
 
@@ -14,7 +14,7 @@ describe('autosave', function () {
       .attr('content');
 
     var User = model('user')
-      .use(collections.use(autosave))
+      .use(collections.use(save))
       .collection('todos', Todo);
 
     var user = new User();
@@ -60,7 +60,7 @@ describe('autosave', function () {
       .attr('content');
 
     var User = model('user')
-      .use(collections.use(autosave))
+      .use(collections.use(save))
       .collection('todos', Todo);
 
     var user = new User();
