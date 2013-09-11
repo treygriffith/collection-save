@@ -1,0 +1,28 @@
+{
+  "name": "collection-autosave",
+  "repo": "treygriffith/collection-autosave",
+  "description": "Automatically save child models when the parent saves",
+  "version": "0.0.1",
+  "keywords": [
+    "collection",
+    "model",
+    "orm",
+    "db",
+    "database",
+    "autosave"
+  ],
+  "dependencies": {
+    "treygriffith/buffer": "*"
+  },
+  "development": {
+    "component/assert": "*",
+    "component/type": "*",
+    "segmentio/model": "*",
+    "treygriffith/collection"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "license": "MIT"
+}
