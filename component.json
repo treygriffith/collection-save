@@ -19,10 +19,11 @@
     "component/assert": "*",
     "component/type": "*",
     "segmentio/model": "*",
-    "treygriffith/collection"
+    "treygriffith/collection": "*"
   },
   "scripts": [
-    "index.js"
+    "index.js",
+    "lib/proto.js"
   ],
   "main": "index.js",
   "license": "MIT"

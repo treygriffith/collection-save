@@ -19,12 +19,13 @@ describe('save', function () {
 
     var user = new User();
     var todo1 = new Todo({
-      id: 1
+      id: 1,
       name: "something",
       content: "something else"
     });
+    todo1.dirty = {};
     var todo2 = new Todo({
-      id: 2
+      id: 2,
       name: "something",
       content: "something else"
     });

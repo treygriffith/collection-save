@@ -19,7 +19,7 @@ module.exports = function (Collection) {
         if (collection.options.saveNewModels !== false) collection.saveNewModels();
       });
 
-      if (options.saveOnPlaceholder !== false) {
+      if (collection.options.saveOnPlaceholder !== false) {
         collection.on('placeholder', buffer(function () {
           collection.model.save();
         }, 100));
