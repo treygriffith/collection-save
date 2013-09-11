@@ -1,4 +1,4 @@
-describe('model-collection', function () {
+describe('autosave', function () {
 
   var collections = require('treygriffith-collection')
     , assert = require('component-assert')
